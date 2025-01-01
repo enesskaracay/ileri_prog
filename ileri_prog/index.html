@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="images/Bird.png" alt="bird-img" class="bird" id="bird-1">
+    <div class="message">
+        <button id="start-button">Start Game</button>
+        <div class="difficulty-buttons">
+            <button id="easy-button">Easy</button>
+            <button id="medium-button">Medium</button>
+            <button id="hard-button">Hard</button>
+        </div>
+        <button id="theme-toggle">Light Mode</button>
+        <button id="high-score-button">High Score</button>
+        <p class="control-instruction"><span style="color: red;">&uarr;</span> ArrowUp to Control</p>
+    </div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
+    <div class="game-over-message" style="display: none;">
+        <button id="restart-button">Restart</button>
+        <button id="exit-button">Exit</button>
+    </div>
+    <div class="high-score-list" style="display: none;">
+        <h2>High Scores</h2>
+        <ul id="high-score-ul"></ul>
+        <button id="back-button">Back</button>
+    </div>
+</body>
+</html>
